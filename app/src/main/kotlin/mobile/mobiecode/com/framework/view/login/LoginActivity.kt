@@ -5,6 +5,7 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_login.*
 import mobile.mobiecode.com.framework.R
 import mobile.mobiecode.com.framework.base.BaseActivity
+import org.jetbrains.anko.toast
 
 class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
 
@@ -41,5 +42,6 @@ class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
      */
     override fun showStatus(status: String) {
         tvStatus.setText(status)
+        toast(status)
     }
 }
