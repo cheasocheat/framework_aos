@@ -1,4 +1,4 @@
-package mobile.mobiecode.com.framework.injection
+package mobile.mobiecode.com.framework.injection.modules
 
 import android.app.Application
 import dagger.Module

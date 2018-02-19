@@ -1,11 +1,13 @@
-package mobile.mobiecode.com.framework.injection
+package mobile.mobiecode.com.framework.injection.components
 
-import android.content.res.Resources
 import dagger.BindsInstance
 import dagger.Component
-import dagger.android.AndroidInjector
 import javax.inject.Singleton
 import dagger.android.support.AndroidSupportInjectionModule
+import mobile.mobiecode.com.framework.App
+import mobile.mobiecode.com.framework.injection.ActivityBuilder
+import mobile.mobiecode.com.framework.injection.modules.AppModule
+
 /**
  * Created by cheasocheat on 2/19/18.
  */
@@ -17,11 +19,11 @@ interface AppComponent {
     interface Builder{
 
         @BindsInstance
-        fun application(application: App):Builder
+        fun application(application: App): Builder
 
         fun build(): AppComponent
     }
 
 
-    fun inject(app:App)
+    fun inject(app: App)
 }
