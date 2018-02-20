@@ -2,27 +2,20 @@ package mobile.mobiecode.com.framework.view.login
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
-import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_login.*
 import mobile.mobiecode.com.framework.R
-import mobile.mobiecode.com.framework.base.BaseActivity
+import mobile.mobiecode.com.framework.view.base.BaseActivity
 import org.jetbrains.anko.toast
-import javax.inject.Inject
 
 class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
 
     private var username = ""
     private var password = ""
 
-    @Inject
-    lateinit var hello:String
 
     override var presenter: LoginPresenter = LoginPresenterImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        AndroidInjection.inject(this)
 
 
         super.onCreate(savedInstanceState)
@@ -32,8 +25,6 @@ class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
             onLoginButtonClicked()
         }
 
-
-        Toast.makeText(this, hello, Toast.LENGTH_LONG).show()
     }
 
 

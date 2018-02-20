@@ -1,6 +1,6 @@
 package mobile.mobiecode.com.framework.view.login
 
-import mobile.mobiecode.com.framework.base.BasePresenter
+import mobile.mobiecode.com.framework.view.base.BasePresenter
 
 /**
  * Created by cheasocheat on 2/19/18.

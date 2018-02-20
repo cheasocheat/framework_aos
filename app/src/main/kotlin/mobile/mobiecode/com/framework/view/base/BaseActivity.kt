@@ -1,4 +1,4 @@
-package mobile.mobiecode.com.framework.base
+package mobile.mobiecode.com.framework.view.base
 
 import android.content.Context
 import android.os.Bundle
