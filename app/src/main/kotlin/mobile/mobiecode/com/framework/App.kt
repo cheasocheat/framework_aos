@@ -4,7 +4,7 @@ import android.app.Activity
 import android.app.Application
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import mobile.mobiecode.com.framework.injection.components.DaggerAppComponent
+import mobile.mobiecode.com.framework.injection.DaggerAppComponent
 import javax.inject.Inject
 
 /**
