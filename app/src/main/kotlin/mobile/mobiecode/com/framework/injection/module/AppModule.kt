@@ -15,4 +15,9 @@ class AppModule {
     @Provides
     @Singleton
     fun provideContext(application: Application): Context = application
+
+    @Provides
+    @Singleton
+    fun provideResource():String="Big olo"
+
 }

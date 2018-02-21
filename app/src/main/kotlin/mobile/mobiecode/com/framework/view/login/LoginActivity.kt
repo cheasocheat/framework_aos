@@ -2,10 +2,13 @@ package mobile.mobiecode.com.framework.view.login
 
 import android.os.Bundle
 import android.util.Log
+import dagger.android.AndroidInjection
+import dagger.android.AndroidInjector
 import kotlinx.android.synthetic.main.activity_login.*
 import mobile.mobiecode.com.framework.R
 import mobile.mobiecode.com.framework.view.base.BaseActivity
 import org.jetbrains.anko.toast
+import javax.inject.Inject
 
 class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
 
@@ -13,18 +16,23 @@ class LoginActivity : BaseActivity<LoginView, LoginPresenter>() , LoginView{
     private var password = ""
 
 
+    @Inject
+    lateinit var welcomeMsg : String
+
     override var presenter: LoginPresenter = LoginPresenterImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
+
+        AndroidInjection.inject(this)
+
         setContentView(R.layout.activity_login)
 
         btnLogin.setOnClickListener {
             onLoginButtonClicked()
         }
 
+        tvStatus.setText(welcomeMsg)
     }
 
 
