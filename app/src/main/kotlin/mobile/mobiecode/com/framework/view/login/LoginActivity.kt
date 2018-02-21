@@ -17,7 +17,8 @@ class LoginActivity : AppCompatActivity(){
     private var password = ""
 
 
-
+@Inject
+lateinit var hello:String
 
 
 
@@ -31,7 +32,7 @@ class LoginActivity : AppCompatActivity(){
             onLoginButtonClicked()
         }
 
-      //  toast(text)
+       toast(hello)
 
     }
 
