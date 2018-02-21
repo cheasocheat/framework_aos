@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/framework_aos.iml" filepath="$PROJECT_DIR$/framework_aos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_AOS.iml" filepath="$PROJECT_DIR$/Framework_AOS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

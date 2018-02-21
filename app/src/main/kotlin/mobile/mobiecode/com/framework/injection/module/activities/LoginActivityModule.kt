@@ -12,11 +12,11 @@ import mobile.mobiecode.com.framework.view.login.LoginView
 @Module
 class LoginActivityModule {
 
-    @Provides
-    fun provideLoginView(loginActivity: LoginActivity): LoginView = loginActivity
-
-    @Provides
-    fun providePresenter(loginView: LoginView): LoginPresenterImpl {
-        return LoginPresenterImpl(loginView)
-    }
+//    @Provides
+//    fun provideLoginView(loginActivity: LoginActivity): LoginView = loginActivity
+//
+//    @Provides
+//    fun providePresenter(loginView: LoginView): LoginPresenterImpl {
+//        return LoginPresenterImpl(loginView)
+//    }
 }

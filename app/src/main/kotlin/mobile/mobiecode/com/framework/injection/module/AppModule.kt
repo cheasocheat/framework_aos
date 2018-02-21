@@ -13,6 +13,5 @@ import javax.inject.Singleton
 class AppModule {
 
     @Provides
-    @Singleton
-    fun provideContext(application: Application): Context = application
+    fun provideBaseURL() = "https://raw.githubusercontent.com/VisalGGEZ/udemy-forum/master/"
 }
