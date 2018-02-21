@@ -1,5 +1,6 @@
 package mobile.mobiecode.com.framework.injection.components
 
+import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -20,11 +21,11 @@ interface AppComponent {
     interface Builder {
 
         @BindsInstance
-        fun application(application: App): Builder
+        fun application(application: Application): Builder //Bind application to component for share
 
-        fun build(): AppComponent //Must have
+        fun build(): AppComponent //Must have, because this method will return your component
     }
 
 
-    fun inject(app : App)
+    fun inject(app: App)
 }

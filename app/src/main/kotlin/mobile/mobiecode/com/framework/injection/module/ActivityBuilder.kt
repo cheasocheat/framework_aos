@@ -2,6 +2,7 @@ package mobile.mobiecode.com.framework.injection.module
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import mobile.mobiecode.com.framework.view.main.MainActivity
 import mobile.mobiecode.com.framework.view.login.LoginActivity
 
 /**
@@ -17,4 +18,8 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector
 //    abstract fun bindLoginActivity(builder : LoginActivityComponent.Builer) : AndroidInjector.Factory<LoginActivity>
     abstract fun bindLoginActivity() : LoginActivity
+
+
+    @ContributesAndroidInjector
+    abstract fun bindMainActivity() : MainActivity
 }
