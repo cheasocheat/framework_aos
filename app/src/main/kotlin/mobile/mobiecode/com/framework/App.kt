@@ -2,6 +2,7 @@ package mobile.mobiecode.com.framework
 
 import android.app.Activity
 import android.app.Application
+import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import mobile.mobiecode.com.framework.injection.components.DaggerAppComponent
@@ -22,5 +23,5 @@ class App : Application(), HasActivityInjector {
     }
 
 
-    override fun activityInjector() = activityDispatchingAndroidInjector
+    override fun activityInjector(): AndroidInjector<Activity> = activityDispatchingAndroidInjector
 }
